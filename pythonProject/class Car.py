@@ -75,3 +75,6 @@ class Battery():
             range = 315
 
         print(f"This car can go about {range} miles on a full charge")
+
+
+print('Хочу создать конфликт!')
