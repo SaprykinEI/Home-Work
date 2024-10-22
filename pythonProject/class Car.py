@@ -28,3 +28,7 @@ class Car():
             self.odometer_reading = milieage
         else:
             print("Одометр скручивать нельзя")
+
+    def increment_odometer(self, miles):
+        '''Увеличивает показания одометра с заданным приращением'''
+        self.odometer_reading += miles
