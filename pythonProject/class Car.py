@@ -19,3 +19,12 @@ class Car():
     def read_odometer(self):
         '''Вывод пробег машины в милях'''
         print(f"This car has {self.odometer_reading} miles on it")
+
+
+    def update_odometer(self, milieage):
+        '''Устанавливает заданное значение на одометре
+        При попытке обратной открутке изменения отклоняются'''
+        if milieage >= self.odometer_reading:
+            self.odometer_reading = milieage
+        else:
+            print("Одометр скручивать нельзя")
