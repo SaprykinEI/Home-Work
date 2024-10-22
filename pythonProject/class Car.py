@@ -64,3 +64,14 @@ class Battery():
     def describe_battery(self):
         '''Выводит информацию о мощности аккумулятора'''
         print(f"This car has a {self.battery_size}-kwh battery")
+
+
+    def get_range(self):
+        '''Выводит приблизительный запас хода аккумулятоа'''
+
+        if self.battery_size == 75:
+            range = 260
+        elif self.battery_size == 100:
+            range = 315
+
+        print(f"This car can go about {range} miles on a full charge")
